@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link  href="/formulario/estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<div>
+    <h1 id="tituto">Formulario</h1>
+    <form>
+        <div>                      
+            <div>
+                <label>Digite seu nome</label> <!--informação da caixa de texto -->
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div>
+                <label>Digite seu sobrenome</label><!-- infomação ao lado da caixa de texto -->
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+        </div>
+        <div>
+            <label>Digite seu Email</label><!--informação ao lado da caixa de texto -->
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label>Genero:</label></br>
+            <label>
+                <input type="radio" name="Homem" value="Homem">Homem</br>
+            </label>
+
+            <label>
+                <input type="radio" name="Mulher" value="Mulher">Mulher</br>
+            </label>
+
+            <label>
+                <input type="radio" name="Outros" value="Outros">Outros</br>
+            </label>
+        </div>
+        <div>
+            <select id="seletor">
+                <option selected disabled value="">motivo da reclamação</option>
+                <option value="reclamação-1">reclamação-1</option>
+                <option value="reclamação-2">reclamação-2</option>
+                <option value="reclamação-3">reclamação-3</option>
+            </select>
+        </div>
+        <fieldset>
+            <label>pontos positivos da loja:</label>
+            <input type="checkbox" value="bom atendimento" name="positivo-1" id="positivo-1">
+            <label for="positivo-1"> Bom atendimento</label>
+            <input type="checkbox" value="Atendimento rápido" name="positivo-2"
+            id="positivo-2">
+            <label for="positivo-2">Atendimento rápido</label>
+            <input type="checkbox" value="Ambiente Limpo"
+            name="positivo-3"
+            id="positivo-3">
+            <label for="positivo-3">Ambiente Limpo</label>
+        </fieldset>
+        <fieldset>
+            <label>Pontos negativos:</label>
+            <input type="checkbox" value="Atendimento mal executado" name="negativo-1"
+            id="negativo-1">
+            <label for="negativo-1">Atendimento mal executado</label> 
+            <input type="checkbox" value="Atendimento muito devagar"
+            name="negativo-2" id="negativo-2">
+            <label for="negativo-2">Atendimento muito devagar</label>
+            <input type="checkbox" value="Ambiente desorganizado" name="negativo-3" id="nagetivo-3">
+            <label for="negativo-3">Ambiente desorganizado</label>
+        </fieldset>
+        <div>
+            <label>faça sua reclamação</label>
+            <textarea rows="10" style="width: 300px;" name="texto-reclamação" id="texto-reclamação"></textarea>
+        </div>
+        <button type="submit">ENVIAR</button>
+    </form>
+</div>
+</body>
+</html>
