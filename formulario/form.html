@@ -9,25 +9,24 @@
     <title>Formulário</title>
 </head>
 <body>
-    <div>
-        <h1 id="tituto">Formulario</h1>
+    <div id="corpo">
+        <h1 id="titulo">Formulario</h1>
         <form>
-            <div>                      
-                <div class="inicio">
+            <div class="informações-pessoais">                      
+                <div>
                     <label>Digite seu nome</label>
                     <input type="text" name="nome" id="nome" required>
                 </div>
-                <div class="inicio">
+                <div>
                     <label>Digite seu sobrenome</label>
                     <input type="text" name="sobrenome" id="sobrenome" required>
                 </div>
-            </div>
-            <div class="inicio">
-                <label>Digite seu Email</label>
-                <input type="email" name="email" id="email" required>
+                <div>
+                    <label>Digite seu Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
             </div>
             <div id="genero">
-                <label>Genero:</label></br>
                 <label>
                     <input type="radio" name="opção" value="Homem">Homem</br>
                 </label>
@@ -40,7 +39,7 @@
                     <input type="radio" name="opção" value="Outros">Outros</br>
                 </label>
             </div>
-            <div id="seletor">
+            <div>
                 <select id="seletor">
                     <option selected disabled value="">motivo da reclamação</option>
                     <option value="reclamação-1">reclamação-1</option>
@@ -48,7 +47,7 @@
                     <option value="reclamação-3">reclamação-3</option>
                 </select>
             </div>
-            <fieldset class="pontos positivos/negativos">
+            <fieldset>
                 <label>pontos positivos da loja:</label>
                 <input type="checkbox" value="bom atendimento" name="positivo-1" id="positivo-1">
                 <label for="positivo-1"> Bom atendimento</label>
@@ -60,7 +59,7 @@
                 id="positivo-3">
                 <label for="positivo-3">Ambiente Limpo</label>
             </fieldset>
-            <fieldset class="pontos positivos/negativos">
+            <fieldset>
                 <label>Pontos negativos:</label>
                 <input type="checkbox" value="Atendimento mal executado" name="negativo-1"
                 id="negativo-1">
@@ -71,8 +70,8 @@
                 <input type="checkbox" value="Ambiente desorganizado" name="negativo-3" id="nagetivo-3">
                 <label for="negativo-3">Ambiente desorganizado</label>
             </fieldset>
-            <div id="texto-reclamação">
-                <label>faça sua reclamação</label>
+            <h2>faça a sua reclamação</h2>
+            <div id="reclamação">
                 <textarea rows="10" style="width: 300px;" name="texto-reclamação" id="texto-reclamação"></textarea>
             </div>
             <button type="submit" id="botão">ENVIAR</button>
