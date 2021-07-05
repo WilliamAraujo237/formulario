@@ -9,7 +9,7 @@ body{
 #corpo{
     background-color: orange;
     margin: 20px;
-    padding-bottom:140px;
+    padding-bottom:100px;
     border-radius: 20px;
 }
 #titulo{
@@ -52,6 +52,14 @@ h2{
     display: flex;
     justify-content:center;
     margin-top: 20px;
-    margin-left:550px;
+    margin-left:590px;
     padding: 9px;
+}
+.opções{
+    display: inline-block;
+    justify-content: center;
+    margin-left: 270px;
+    margin-top: 9px;
+    border:none;
+    width:auto;
 }
